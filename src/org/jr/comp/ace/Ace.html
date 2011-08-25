@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Editor</title>        
+	    <script src="js/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-c_cpp.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-clojure.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-coffee.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-csharp.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-css.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-groovy.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-html.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-java.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-javascript.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-json.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-lua.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-markdown.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-ocaml.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-perl.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-php.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-python.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-ruby.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-scad.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-scala.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-scss.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-svg.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-textile.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mode-xml.js" type="text/javascript" charset="utf-8"></script>
+        <script> 
+            var editor;
+            
+            window.onload = function() {
+                editor = ace.edit("editor");
+            };
+            
+            function setTheme(value) {
+                name = "ace/theme/" + value;
+                loadTheme(name, function(){
+                    editor.setTheme(name);
+                });                    
+            }
+            
+            var themes = {};
+            
+            function loadTheme(name, callback) {  
+                if (themes[name]) {
+                    editor.setTheme(name); 
+                } else {
+                    themes[name] = 1;
+                    var base = name.split("/").pop();
+                    var fileName = "js/theme-" + base + ".js";
+                    loadScriptFile(fileName, callback)
+                }
+            }
+            function loadScriptFile(path, callback) {
+                var head = document.getElementsByTagName('head')[0];
+                var s = document.createElement('script');
+            
+                s.src = path;
+                head.appendChild(s);
+                
+                s.onload = callback;
+            }
+             
+            function getEditor(){
+                return editor;
+            }
+            
+            function setMode(value){
+                var mode = require("ace/mode/" + value).Mode;
+                editor.getSession().setMode(new mode());
+            }
+            
+            function getContent(){
+                return editor.getSession().getValue();
+            }
+            
+            function setContent(value){
+                editor.getSession().setValue(value);
+            }
+            function setTabSize(value){
+                editor.getSession().setTabSize(value);
+            }
+            function setUseSoftTabs(value){
+                editor.getSession().setUseSoftTabs(value);
+            }
+            function setFontSize(value){
+                document.getElementById('editor').style.fontSize=value+'px';
+            }
+            function setWrapMode(value){
+                var session = editor.getSession();
+                var renderer = editor.renderer;
+                var valInt = parseInt(value);
+                if(!isNaN(value)){                    
+                    session.setUseWrapMode(true);
+                    session.setWrapLimitRange(valInt, valInt);
+                    renderer.setPrintMarginColumn(valInt);
+                }
+                if(value=="off"){
+                        session.setUseWrapMode(false);
+                        renderer.setPrintMarginColumn(80);
+                }else{//"free"
+                        session.setUseWrapMode(true);
+                        session.setWrapLimitRange(null, null);
+                        renderer.setPrintMarginColumn(80);
+                }
+            }
+            
+            function setHighlightActiveLine(value){
+                editor.setHighlightActiveLine(value);
+            }
+            function setReadOnly(value){
+                editor.setReadOnly(value);
+            }
+            
+            function setShowGutter(value){
+                editor.renderer.setShowGutter(value);
+            }
+        </script>
+    </head>
+    <body> 
+        <div id="editor" style="position:absolute;left:0;top:0;width:100%;height:100%;"></div>
+    </body>
+</html>

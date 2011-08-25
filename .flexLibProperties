@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="org.jr.comp.ace.Ace"/>
+    <classEntry path="org.jr.comp.ace.AceThemes"/>
+    <classEntry path="org.jr.comp.ace.AceModes"/>
+    <classEntry path="org.jr.comp.ace.AceSkin"/>
+  </includeClasses>
+  <includeResources>
+    <resourceEntry destPath="org/jr/comp/ace/Ace.html" sourcePath="org/jr/comp/ace/Ace.html"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/ace-uncompressed.js" sourcePath="org/jr/comp/ace/js/ace-uncompressed.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/ace.js" sourcePath="org/jr/comp/ace/js/ace.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/keybinding-emacs.js" sourcePath="org/jr/comp/ace/js/keybinding-emacs.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/keybinding-vim.js" sourcePath="org/jr/comp/ace/js/keybinding-vim.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-c_cpp.js" sourcePath="org/jr/comp/ace/js/mode-c_cpp.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-clojure.js" sourcePath="org/jr/comp/ace/js/mode-clojure.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-coffee.js" sourcePath="org/jr/comp/ace/js/mode-coffee.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-csharp.js" sourcePath="org/jr/comp/ace/js/mode-csharp.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-css.js" sourcePath="org/jr/comp/ace/js/mode-css.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-groovy.js" sourcePath="org/jr/comp/ace/js/mode-groovy.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-html.js" sourcePath="org/jr/comp/ace/js/mode-html.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-java.js" sourcePath="org/jr/comp/ace/js/mode-java.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-javascript.js" sourcePath="org/jr/comp/ace/js/mode-javascript.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-json.js" sourcePath="org/jr/comp/ace/js/mode-json.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-lua.js" sourcePath="org/jr/comp/ace/js/mode-lua.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-markdown.js" sourcePath="org/jr/comp/ace/js/mode-markdown.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-ocaml.js" sourcePath="org/jr/comp/ace/js/mode-ocaml.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-perl.js" sourcePath="org/jr/comp/ace/js/mode-perl.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-php.js" sourcePath="org/jr/comp/ace/js/mode-php.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-python.js" sourcePath="org/jr/comp/ace/js/mode-python.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-ruby.js" sourcePath="org/jr/comp/ace/js/mode-ruby.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-scad.js" sourcePath="org/jr/comp/ace/js/mode-scad.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-scala.js" sourcePath="org/jr/comp/ace/js/mode-scala.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-scss.js" sourcePath="org/jr/comp/ace/js/mode-scss.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-svg.js" sourcePath="org/jr/comp/ace/js/mode-svg.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-textile.js" sourcePath="org/jr/comp/ace/js/mode-textile.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/mode-xml.js" sourcePath="org/jr/comp/ace/js/mode-xml.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-clouds.js" sourcePath="org/jr/comp/ace/js/theme-clouds.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-clouds_midnight.js" sourcePath="org/jr/comp/ace/js/theme-clouds_midnight.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-cobalt.js" sourcePath="org/jr/comp/ace/js/theme-cobalt.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-crimson_editor.js" sourcePath="org/jr/comp/ace/js/theme-crimson_editor.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-dawn.js" sourcePath="org/jr/comp/ace/js/theme-dawn.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-eclipse.js" sourcePath="org/jr/comp/ace/js/theme-eclipse.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-idle_fingers.js" sourcePath="org/jr/comp/ace/js/theme-idle_fingers.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-kr_theme.js" sourcePath="org/jr/comp/ace/js/theme-kr_theme.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-merbivore.js" sourcePath="org/jr/comp/ace/js/theme-merbivore.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-merbivore_soft.js" sourcePath="org/jr/comp/ace/js/theme-merbivore_soft.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-mono_industrial.js" sourcePath="org/jr/comp/ace/js/theme-mono_industrial.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-monokai.js" sourcePath="org/jr/comp/ace/js/theme-monokai.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-pastel_on_dark.js" sourcePath="org/jr/comp/ace/js/theme-pastel_on_dark.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-solarized_dark.js" sourcePath="org/jr/comp/ace/js/theme-solarized_dark.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-solarized_light.js" sourcePath="org/jr/comp/ace/js/theme-solarized_light.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-textmate.js" sourcePath="org/jr/comp/ace/js/theme-textmate.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-twilight.js" sourcePath="org/jr/comp/ace/js/theme-twilight.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/theme-vibrant_ink.js" sourcePath="org/jr/comp/ace/js/theme-vibrant_ink.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/worker-coffee.js" sourcePath="org/jr/comp/ace/js/worker-coffee.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/worker-css.js" sourcePath="org/jr/comp/ace/js/worker-css.js"/>
+    <resourceEntry destPath="org/jr/comp/ace/js/worker-javascript.js" sourcePath="org/jr/comp/ace/js/worker-javascript.js"/>
+  </includeResources>
+  <namespaceManifests/>
+</flexLibProperties>
